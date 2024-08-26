@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SuperUltraMegaClick"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="SUMC" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="Gray" Width="301" Height="30" HorizontalAlignment="Center" Orientation="Horizontal">
+            
+            <TextBlock Text=" Количество кликов в секунду: " FontSize="20" ></TextBlock>
+            <TextBlock x:Name="Counter" Text="4" FontSize="20" HorizontalAlignment="Right" Margin="0,3,0,0" />
+        </StackPanel>
+
+        <Slider x:Name="SliderCount" Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="301" Margin="0,0,0,60"> </Slider>
+        
+        
     </Grid>
 </Window>

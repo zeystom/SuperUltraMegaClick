@@ -22,3 +22,4 @@ C:\Users\Vladislav\source\repos\SuperUltraMegaClick\SuperUltraMegaClick\obj\Debu
 C:\Users\Vladislav\source\repos\SuperUltraMegaClick\SuperUltraMegaClick\obj\Debug\net8.0-windows\SuperUltraMegaClick.genruntimeconfig.cache
 C:\Users\Vladislav\source\repos\SuperUltraMegaClick\SuperUltraMegaClick\obj\Debug\net8.0-windows\ref\SuperUltraMegaClick.dll
 C:\Users\Vladislav\source\repos\SuperUltraMegaClick\SuperUltraMegaClick\bin\Debug\net8.0-windows\Gma.System.MouseKeyHook.dll
+C:\Users\Vladislav\source\repos\SuperUltraMegaClick\SuperUltraMegaClick\obj\Debug\net8.0-windows\SuperUltraMegaClick.sourcelink.json

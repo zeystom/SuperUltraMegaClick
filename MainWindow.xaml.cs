@@ -28,18 +28,6 @@ namespace SuperUltraMegaClick
         private void Timer_Tick(object sender, EventArgs e)
         {
             var sim = new InputSimulator();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-            sim.Mouse.LeftButtonClick();
-
 
         }
 
@@ -71,7 +59,6 @@ namespace SuperUltraMegaClick
 
 
         }
-
 
     }
 }
