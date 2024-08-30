@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "MPCQTeros6o=",
+  "dgSpecHash": "REhM0JC1gP8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladislav\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+  "projectFilePath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vladislav\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
-    "C:\\Users\\Vladislav\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
+    "C:\\Users\\gogoh\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
+    "C:\\Users\\gogoh\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"InputSimulator 1.0.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "InputSimulator",
       "targetGraphs": [
         "net8.0-windows7.0"

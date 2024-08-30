@@ -5,25 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SuperUltraMegaClick"
         mc:Ignorable="d"
-        Title="SUMC" Height="450" Width="800">
+        Title="SUMC" Height="450" Width="800" Background="#f3f3f3" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" >
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0" Background="Gray" Width="301" Height="30" HorizontalAlignment="Center" Orientation="Horizontal">
-            
-            <TextBlock Text=" Количество кликов в секунду: " FontSize="20" ></TextBlock>
-            <TextBlock x:Name="Counter" Text="4" FontSize="20" HorizontalAlignment="Right" Margin="0,3,0,0" />
-        </StackPanel>
+        <Border Grid.Row="0" Grid.Column="0" Background="#dbdbdb" Width="311" Height="30"
+                HorizontalAlignment="Center" CornerRadius="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text=" Количество кликов в секунду: " FontSize="20" VerticalAlignment="Center" />
+                <TextBlock x:Name="Counter" Text="4" FontSize="20" HorizontalAlignment="Right" Margin="0,3,0,0" />
+            </StackPanel>
+        </Border>
+        <Slider x:Name="SliderCount" Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                Width="301" TickFrequency="1" IsSnapToTickEnabled="True" Minimum="1" Maximum="60"
+                ValueChanged="SliderCountOnValueChanged" Margin="0,0,0,60" />
 
-        <Slider x:Name="SliderCount" Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="301" Margin="0,0,0,60"> </Slider>
-        
-        
+        <Border Grid.Row="1" Grid.Column="0" Background="#dbdbdb" Width="311" Height="30"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0" CornerRadius="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text=" Множитель кликов в секунду: " FontSize="20" VerticalAlignment="Center" />
+                <TextBlock x:Name="MultiCount" Text="4" FontSize="20" HorizontalAlignment="Right" Margin="0,3,0,0" />
+            </StackPanel>
+        </Border>
+        <Slider x:Name="MultiSliderCount" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center"
+                Width="301" TickFrequency="1" IsSnapToTickEnabled="True" Minimum="1" Maximum="10" Value="1"
+                ValueChanged="MultiSliderCountOnValueChanged" Margin="0,0,0,60" />
     </Grid>
 </Window>

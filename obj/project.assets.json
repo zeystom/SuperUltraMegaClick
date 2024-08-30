@@ -67,19 +67,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vladislav\\.nuget\\packages\\": {}
+    "C:\\Users\\gogoh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vladislav\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+      "projectUniqueName": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
       "projectName": "SuperUltraMegaClick",
-      "projectPath": "C:\\Users\\Vladislav\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
-      "packagesPath": "C:\\Users\\Vladislav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vladislav\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick\\obj\\",
+      "projectPath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+      "packagesPath": "C:\\Users\\gogoh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vladislav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gogoh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -138,7 +138,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -147,7 +147,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"InputSimulator 1.0.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "InputSimulator",
       "targetGraphs": [
         "net8.0-windows7.0"
