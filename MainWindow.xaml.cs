@@ -17,18 +17,29 @@ namespace SuperUltraMegaClick
         private bool _initialized = false;
         private bool _isOn = false;
         private int _multiCounter = 1;
+        private Config _config;
 
         public MainWindow()
         {
+            _config = ConfigManager.LoadSettings(); 
             _timer = new Timer(1000);
             _timer.Elapsed += TimerElapsed;
             InitializeComponent();
             StartKeyHook();
             InitializeSettings();
+            Window_Loaded();
+        }
+        private void Window_Loaded()
+        {
+            this.Closing += MainWindow_Closing;
         }
 
         private void InitializeSettings()
         {
+            Counter.Text = _config.ClickPerSecond.ToString();
+            SliderCount.Value = _config.ClickPerSecond;
+            MultiCount.Text = _config.MultiClickPerSecond.ToString();
+            MultiSliderCount.Value = _config.MultiClickPerSecond;
             _initialized = true;
         }
 
@@ -64,9 +75,9 @@ namespace SuperUltraMegaClick
 
         private void SliderCountOnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            Counter.Text = SliderCount.Value.ToString();
             if (_initialized)
             {
+                Counter.Text = SliderCount.Value.ToString();
                 double intervalInSeconds = 1.0 / e.NewValue;
                 _timer.Interval = intervalInSeconds * 1000;
             }
@@ -74,11 +85,18 @@ namespace SuperUltraMegaClick
 
         private void MultiSliderCountOnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            MultiCount.Text = MultiSliderCount.Value.ToString();
             if (_initialized)
             {
+                MultiCount.Text = MultiSliderCount.Value.ToString();
                 _multiCounter = (int)e.NewValue;
             }
+        }
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            _config = ConfigManager.LoadSettings(); 
+            _config.ClickPerSecond = (int)SliderCount.Value;
+            _config.MultiClickPerSecond = (int)MultiSliderCount.Value;
+            ConfigManager.SaveSettings(_config);
         }
     }
 }
