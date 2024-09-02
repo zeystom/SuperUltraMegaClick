@@ -111,19 +111,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gogoh\\.nuget\\packages\\": {}
+    "C:\\Users\\super\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+      "projectUniqueName": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
       "projectName": "SuperUltraMegaClick",
-      "projectPath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
-      "packagesPath": "C:\\Users\\gogoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\obj\\",
+      "projectPath": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+      "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gogoh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -186,7 +186,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

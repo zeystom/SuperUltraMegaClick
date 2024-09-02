@@ -13,7 +13,7 @@ namespace SuperUltraMegaClick
     {
         private Timer _timer;
         private IKeyboardMouseEvents? _globalHook;
-        private InputSimulator _inputSimulator = new();
+        private readonly InputSimulator _inputSimulator = new();
         private bool _initialized = false;
         private bool _isOn = false;
         private int _multiCounter = 1;
@@ -25,8 +25,8 @@ namespace SuperUltraMegaClick
             _timer = new Timer(1000);
             _timer.Elapsed += TimerElapsed;
             InitializeComponent();
-            StartKeyHook();
             InitializeSettings();
+            StartKeyHook();
             Window_Loaded();
         }
         private void Window_Loaded()
@@ -40,6 +40,8 @@ namespace SuperUltraMegaClick
             SliderCount.Value = _config.ClickPerSecond;
             MultiCount.Text = _config.MultiClickPerSecond.ToString();
             MultiSliderCount.Value = _config.MultiClickPerSecond;
+            _multiCounter = _config.MultiClickPerSecond;
+            CurrentKps.Text = (_config.ClickPerSecond * _config.MultiClickPerSecond).ToString();
             _initialized = true;
         }
 
@@ -78,6 +80,11 @@ namespace SuperUltraMegaClick
             if (_initialized)
             {
                 Counter.Text = SliderCount.Value.ToString();
+             
+                CurrentKps.Text = (MultiSliderCount.Value * SliderCount.Value).ToString();
+            }
+            else
+            {
                 double intervalInSeconds = 1.0 / e.NewValue;
                 _timer.Interval = intervalInSeconds * 1000;
             }
@@ -89,6 +96,8 @@ namespace SuperUltraMegaClick
             {
                 MultiCount.Text = MultiSliderCount.Value.ToString();
                 _multiCounter = (int)e.NewValue;
+                CurrentKps.Text = (MultiSliderCount.Value * SliderCount.Value).ToString();
+
             }
         }
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kaQPBKoQ/f0=",
+  "dgSpecHash": "caAGnWimluU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+  "projectFilePath": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gogoh\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
-    "C:\\Users\\gogoh\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512",
-    "C:\\Users\\gogoh\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\super\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
+    "C:\\Users\\super\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512",
+    "C:\\Users\\super\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": [
     {
