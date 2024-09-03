@@ -36,7 +36,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource DefaultBorderStyle}">
+        <Border Height="260" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource DefaultBorderStyle}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -58,7 +58,7 @@
                     </Border>
                 </StackPanel>
 
-                <Border Grid.Row="1" Style="{StaticResource InnerBorderStyle}" Width="85">
+                <Border Grid.Row="1" Style="{StaticResource InnerBorderStyle}" Width="85" Margin="0,0,0,20">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <TextBlock Text="KPS:" FontSize="20"/>
                         <TextBlock x:Name="CurrentKps" Margin="10,0,0,0" FontSize="20"></TextBlock>
@@ -74,11 +74,22 @@
                     </Border>
                     <Slider x:Name="MultiSliderCount" Width="301" TickFrequency="1" IsSnapToTickEnabled="True" Minimum="1" Maximum="10"
                             ValueChanged="MultiSliderCountOnValueChanged" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                    
+                    <Border Style="{StaticResource InnerBorderStyle}" Margin="0,0,0,15">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="Кнопка мыши: " FontSize="20" VerticalAlignment="Center" />
+                            <RadioButton x:Name="LeftButtonMouse"  Content="Левая" IsChecked="True" GroupName="MouseButtonRadio" FontSize="16" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                            <RadioButton x:Name="RightButtonMouse" Content="Правая" GroupName="MouseButtonRadio" FontSize="16" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                        </StackPanel>
+                    </Border>
                 </StackPanel>
             </Grid>
         </Border>
 
         <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Style="{StaticResource DefaultBorderStyle}">
+            
+            
+            
         </Border>
     </Grid>
 </Window>

@@ -6,6 +6,7 @@ using Gma.System.MouseKeyHook;
 using KeyEventArgs = System.Windows.Forms.KeyEventArgs;
 using System.Timers;
 using WindowsInput;
+using MouseButton = System.Windows.Input.MouseButton;
 using Timer = System.Timers.Timer;
 namespace SuperUltraMegaClick
 {
@@ -13,7 +14,6 @@ namespace SuperUltraMegaClick
     {
         private Timer _timer;
         private IKeyboardMouseEvents? _globalHook;
-        private readonly InputSimulator _inputSimulator = new();
         private bool _initialized = false;
         private bool _isOn = false;
         private int _multiCounter = 1;
@@ -42,15 +42,24 @@ namespace SuperUltraMegaClick
             MultiSliderCount.Value = _config.MultiClickPerSecond;
             _multiCounter = _config.MultiClickPerSecond;
             CurrentKps.Text = (_config.ClickPerSecond * _config.MultiClickPerSecond).ToString();
+            double intervalInSeconds = 1.0 / _config.ClickPerSecond;
+            _timer.Interval = intervalInSeconds * 1000;
             _initialized = true;
         }
 
         private void TimerElapsed(object sender, ElapsedEventArgs e)
         {
-            for (int i = 0; i < _multiCounter; i++)
+            Dispatcher.Invoke(() =>
             {
-                _inputSimulator.Mouse.LeftButtonClick();
-            }
+                if (LeftButtonMouse.IsChecked == true)
+                {
+                    Clicker.LeftMouseClick(_multiCounter);
+                }
+                else
+                {
+                    Clicker.RightMouseClick(_multiCounter);
+                }
+            });
         }
 
         private void StartKeyHook()
@@ -80,14 +89,11 @@ namespace SuperUltraMegaClick
             if (_initialized)
             {
                 Counter.Text = SliderCount.Value.ToString();
-             
                 CurrentKps.Text = (MultiSliderCount.Value * SliderCount.Value).ToString();
-            }
-            else
-            {
                 double intervalInSeconds = 1.0 / e.NewValue;
                 _timer.Interval = intervalInSeconds * 1000;
             }
+         
         }
 
         private void MultiSliderCountOnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
