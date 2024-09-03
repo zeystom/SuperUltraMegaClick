@@ -26,9 +26,9 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+    <Grid >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition  />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -86,6 +86,14 @@
             </Grid>
         </Border>
 
+        <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="25,65,0,0" Orientation="Horizontal" >
+            <TextBlock Text="Кнопка вызова автокликера: " FontSize="20"></TextBlock>
+            <TextBlock Text="k" FontSize="20"></TextBlock>
+        </StackPanel>
+        <Button Grid.Column="0" Grid.Row="1" VerticalAlignment="Bottom" Margin="0,0,0,10" Width="100" Height="40" FontSize="20" Content="Изменить"></Button>
+        
+        
+        
         <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Style="{StaticResource DefaultBorderStyle}">
             
             

@@ -1,5 +1,5 @@
 {
-  "clickpersecond": 1,
-  "multiclickpersecond": 1,
+  "clickpersecond": 35,
+  "multiclickpersecond": 8,
   "bindedkey": 163
 }
