@@ -70,7 +70,8 @@ namespace SuperUltraMegaClick
 
         private void GlobalHookKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == System.Windows.Forms.Keys.RControlKey)
+            _config = ConfigManager.LoadSettings();
+            if (e.KeyCode == _config.BindedKey)
             {
                 if (!_isOn)
                 {
@@ -112,6 +113,12 @@ namespace SuperUltraMegaClick
             _config.ClickPerSecond = (int)SliderCount.Value;
             _config.MultiClickPerSecond = (int)MultiSliderCount.Value;
             ConfigManager.SaveSettings(_config);
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            ReBindKey rebindWindow = new();
+            rebindWindow.Show();
         }
     }
 }

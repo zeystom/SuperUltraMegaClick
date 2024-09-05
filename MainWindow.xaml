@@ -19,8 +19,6 @@
 
         <Style x:Key="InnerBorderStyle" TargetType="Border">
             <Setter Property="Background" Value="#cecece"/>
-            <Setter Property="Width" Value="311"/>
-            <Setter Property="Height" Value="30"/>
             <Setter Property="CornerRadius" Value="10"/>
             <Setter Property="Margin" Value="0,10,0,10"/>
         </Style>
@@ -78,13 +76,15 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-
-                <StackPanel Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
-                    <TextBlock Text="Кнопка вызова автокликера: " FontSize="20"/>
-                    <TextBlock Text="k" FontSize="20"/>
+                
+                
+                <Border Grid.Row="0" Width="330" Style="{StaticResource InnerBorderStyle}">
+                <StackPanel Grid.Row="0"  VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Кнопка вызова автокликера: " FontSize="19"/>
+                    <TextBlock Text="k" FontSize="19"/>
                 </StackPanel>
-                <!-- Применение нового стиля к кнопке -->
-                <Button Grid.Row="1" Margin="10,0,10,10" Style="{StaticResource StyledButton}" Content="Изменить"/>
+                    </Border>
+                <Button Grid.Row="1" Margin="10,0,10,10" Style="{StaticResource StyledButton}" Click="ButtonBase_OnClick" Content="Изменить"/>
 
                 <StackPanel Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center">
                     <Slider x:Name="SliderCount" Width="301" TickFrequency="1" IsSnapToTickEnabled="True" Minimum="1" Maximum="60"

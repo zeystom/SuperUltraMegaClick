@@ -75,3 +75,5 @@ C:\Users\super\source\repos\SuperUltraMegaClick\obj\Debug\net8.0-windows\refint\
 C:\Users\super\source\repos\SuperUltraMegaClick\obj\Debug\net8.0-windows\SuperUltraMegaClick.pdb
 C:\Users\super\source\repos\SuperUltraMegaClick\obj\Debug\net8.0-windows\SuperUltraMegaClick.genruntimeconfig.cache
 C:\Users\super\source\repos\SuperUltraMegaClick\obj\Debug\net8.0-windows\ref\SuperUltraMegaClick.dll
+C:\Users\gogoh\OneDrive\Documents\GitHub\SuperUltraMegaClick\obj\Debug\net8.0-windows\ReBindKey.g.cs
+C:\Users\gogoh\OneDrive\Documents\GitHub\SuperUltraMegaClick\obj\Debug\net8.0-windows\ReBindKey.baml
