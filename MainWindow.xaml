@@ -80,8 +80,8 @@
                 
                 <Border Grid.Row="0" Width="330" Style="{StaticResource InnerBorderStyle}">
                 <StackPanel Grid.Row="0"  VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal" Margin="10">
-                    <TextBlock Text="Кнопка вызова автокликера: " FontSize="19"/>
-                    <TextBlock Text="k" FontSize="19"/>
+                    <TextBlock Text="Изменить кнопку вызова автокликера " FontSize="17"/>
+                    <TextBlock Text="" FontSize="19"/>
                 </StackPanel>
                     </Border>
                 <Button Grid.Row="1" Margin="10,0,10,10" Style="{StaticResource StyledButton}" Click="ButtonBase_OnClick" Content="Изменить"/>

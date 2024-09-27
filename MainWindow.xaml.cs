@@ -1,11 +1,8 @@
-﻿using System.Text;
-using System.Windows;
-using System;
+﻿using System.Windows;
 using System.Windows.Threading;
 using Gma.System.MouseKeyHook;
 using KeyEventArgs = System.Windows.Forms.KeyEventArgs;
 using System.Timers;
-using WindowsInput;
 using MouseButton = System.Windows.Input.MouseButton;
 using Timer = System.Timers.Timer;
 namespace SuperUltraMegaClick
