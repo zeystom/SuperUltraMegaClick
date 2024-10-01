@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
+    "net8.0-windows7.0": {
       "InputSimulator/1.0.4": {
         "type": "package",
         "compile": {
@@ -15,13 +15,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23211.1": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.NET.ILLink.Analyzers.props": {}
-        }
-      },
-      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23211.1": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -30,10 +24,10 @@
       "MouseKeyHook/5.7.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
         },
         "runtime": {
-          "lib/net6.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
@@ -53,7 +47,7 @@
         }
       }
     },
-    "net6.0-windows7.0/win-x64": {
+    "net8.0-windows7.0/win-x64": {
       "InputSimulator/1.0.4": {
         "type": "package",
         "compile": {
@@ -67,13 +61,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23211.1": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.NET.ILLink.Analyzers.props": {}
-        }
-      },
-      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23211.1": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -82,10 +70,10 @@
       "MouseKeyHook/5.7.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
         },
         "runtime": {
-          "lib/net6.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
@@ -120,51 +108,55 @@
         "lib/net20/WindowsInput.xml"
       ]
     },
-    "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23211.1": {
-      "sha512": "0GvbEgDGcUQA9KuWcQU1WwYHXt1tBzNr1Nls/M57rM7NA/AndFwCaCEoJpJkmxRY7xLlPDBnmGp8h5+FNqUngg==",
+    "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
       "type": "package",
-      "path": "microsoft.net.illink.analyzers/7.0.100-1.23211.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
-        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
-        "build/Microsoft.NET.ILLink.Analyzers.props",
-        "microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
-        "microsoft.net.illink.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.NET.ILLink.Tasks/7.0.100-1.23211.1": {
-      "sha512": "tvG8XZYLjT0o3WicCyKBZysVWo1jC9HdCFmNRmddx3WbAz0UCsd0qKZqpiEo99VLA8Re+FzWK51OcRldQPbt2Q==",
-      "type": "package",
-      "path": "microsoft.net.illink.tasks/7.0.100-1.23211.1",
+      "path": "microsoft.net.illink.tasks/8.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "LICENSE.TXT",
         "Sdk/Sdk.props",
-        "build/6.0_suppressions.xml",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
         "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
         "tools/net472/System.Buffers.dll",
         "tools/net472/System.Collections.Immutable.dll",
         "tools/net472/System.Memory.dll",
         "tools/net472/System.Numerics.Vectors.dll",
         "tools/net472/System.Reflection.Metadata.dll",
         "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/net7.0/ILLink.Tasks.deps.json",
-        "tools/net7.0/ILLink.Tasks.dll",
-        "tools/net7.0/Mono.Cecil.Pdb.dll",
-        "tools/net7.0/Mono.Cecil.dll",
-        "tools/net7.0/illink.deps.json",
-        "tools/net7.0/illink.dll",
-        "tools/net7.0/illink.runtimeconfig.json"
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/ILLink.Tasks.deps.json",
+        "tools/net8.0/ILLink.Tasks.dll",
+        "tools/net8.0/Mono.Cecil.Mdb.dll",
+        "tools/net8.0/Mono.Cecil.Pdb.dll",
+        "tools/net8.0/Mono.Cecil.Rocks.dll",
+        "tools/net8.0/Mono.Cecil.dll",
+        "tools/net8.0/Sdk/Sdk.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/illink.deps.json",
+        "tools/net8.0/illink.dll",
+        "tools/net8.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
       ]
     },
     "MouseKeyHook/5.7.1": {
@@ -215,40 +207,39 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
+    "net8.0-windows7.0": [
       "InputSimulator >= 1.0.4",
-      "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
-      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
       "MouseKeyHook >= 5.7.1",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gogoh\\.nuget\\packages\\": {}
+    "C:\\Users\\super\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+      "projectUniqueName": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
       "projectName": "SuperUltraMegaClick",
-      "projectPath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
-      "packagesPath": "C:\\Users\\gogoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gogoh\\OneDrive\\Documents\\GitHub\\SuperUltraMegaClick\\obj\\",
+      "projectPath": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\SuperUltraMegaClick.csproj",
+      "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\super\\source\\repos\\SuperUltraMegaClick\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gogoh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net8.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows7.0",
           "projectReferences": {}
         }
       },
@@ -264,23 +255,17 @@
       }
     },
     "frameworks": {
-      "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows7.0",
         "dependencies": {
           "InputSimulator": {
             "target": "Package",
             "version": "[1.0.4, )"
           },
-          "Microsoft.NET.ILLink.Analyzers": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[7.0.100-1.23211.1, )",
-            "autoReferenced": true
-          },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.100-1.23211.1, )",
+            "version": "[8.0.8, )",
             "autoReferenced": true
           },
           "MouseKeyHook": {
@@ -305,32 +290,16 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[8.0.8, 8.0.8]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[8.0.8, 8.0.8]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[8.0.8, 8.0.8]"
           }
         ],
         "frameworkReferences": {
@@ -341,7 +310,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -355,10 +324,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"InputSimulator 1.0.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "InputSimulator",
       "targetGraphs": [
-        "net6.0-windows7.0"
+        "net8.0-windows7.0"
       ]
     }
   ]

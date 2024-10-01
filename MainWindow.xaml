@@ -76,15 +76,11 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                
-                
-                <Border Grid.Row="0" Width="330" Style="{StaticResource InnerBorderStyle}">
-                <StackPanel Grid.Row="0"  VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal" Margin="10">
-                    <TextBlock Text="Изменить кнопку вызова автокликера " FontSize="17"/>
-                    <TextBlock Text="" FontSize="19"/>
-                </StackPanel>
-                    </Border>
-                <Button Grid.Row="1" Margin="10,0,10,10" Style="{StaticResource StyledButton}" Click="ButtonBase_OnClick" Content="Изменить"/>
+
+                <Border Width="200" Style="{StaticResource InnerBorderStyle} ">
+                    <TextBlock HorizontalAlignment="Center" FontSize="26" FontWeight="Bold" Text="Мышь"></TextBlock>
+                </Border>
+                <Button Grid.Row="1"  Width="240" Margin="10,00,10,10" Style="{StaticResource StyledButton}" Click="ButtonBase_OnClick" Content="Изменить кнопку вызова"/>
 
                 <StackPanel Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center">
                     <Slider x:Name="SliderCount" Width="301" TickFrequency="1" IsSnapToTickEnabled="True" Minimum="1" Maximum="60"
@@ -126,7 +122,9 @@
         </Border>
 
         <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource DefaultBorderStyle}">
-            <!-- Место для контента в правой колонке -->
+            <Border Width="200" Style="{StaticResource InnerBorderStyle} ">
+                <TextBlock HorizontalAlignment="Center" FontSize="26" FontWeight="Bold" Text="Клавиатура"></TextBlock>
+            </Border>
         </Border>
     </Grid>
 </Window>
